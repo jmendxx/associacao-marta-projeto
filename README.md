@@ -127,7 +127,7 @@ O sistema foi desenvolvido para adaptação em:
 ```text
 projeto/
 │
-├── biblioteca.html
+├── index.html
 ├── conteudos.html
 │
 ├── css/
