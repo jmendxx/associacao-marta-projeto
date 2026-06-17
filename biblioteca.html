@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- CONFIGURAÇÕES BÁSICAS -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Biblioteca de Conteúdos</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/biblioteca.css">
+
+    <!-- ÍCONES -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="topo">
+
+        <h1>Biblioteca Educacional</h1>
+
+        <p>Espaço de aprendizagem da Associação Marta com conteúdos sobre prevenção da violência, autonomia financeira, relacionamentos saudáveis, saúde mental e capacitação profissional.</p>
+
+    </header>
+
+    <main>
+
+        <!-- QUIZ -->
+
+        <section class="quiz-section">
+
+            <h2>Você reconhece estes sinais?</h2>
+
+            <p class="quiz-descricao">
+
+                Responda às perguntas abaixo para identificar possíveis sinais
+                de relacionamentos abusivos.
+
+            </p>
+
+            <div class="quiz-container">
+
+                <div id="quiz">
+
+                    <div id="quiz-info">
+
+                        Pergunta 1 de 5
+
+                    </div>
+
+                    <h3 id="pergunta"></h3>
+
+                    <div class="quiz-botoes">
+
+                        <button
+                            class="btn-resposta"
+                            onclick="responder(true)">
+
+                            <i class="fa-solid fa-check"></i>
+
+                            Sim
+
+                        </button>
+
+                        <button
+                            class="btn-resposta"
+                            onclick="responder(false)">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                            Não
+
+                        </button>
+
+                    </div>
+
+                    <div class="barra-container">
+
+                        <div id="barra-progresso"></div>
+
+                    </div>
+
+                </div>
+
+                <div
+                    id="resultado-quiz"
+                    class="resultado-quiz">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DIVISOR --> 
+         
+        <hr class="divisor">
+
+        <!-- FILTROS E PESQUISA -->
+
+        <section class="barra-filtros">
+
+            <div class="filtros">
+
+                <button
+                    class="btn-filtro ativo"
+                    data-categoria="todos">
+
+                    Todos
+
+                </button>
+
+                <button
+                    class="btn-filtro"
+                    data-categoria="Relacionamentos">
+
+                    Relacionamentos
+
+                </button>
+
+                <button
+                    class="btn-filtro"
+                    data-categoria="Educação para Jovens">
+
+                    Jovens
+
+                </button>
+
+                <button
+                    class="btn-filtro"
+                    data-categoria="Oficinas">
+
+                    Oficinas
+
+                </button>
+
+                <button
+                    class="btn-filtro"
+                    data-categoria="Educação Financeira">
+
+                    Financeiro
+
+                </button>
+
+                <button
+                    class="btn-filtro"
+                    data-categoria="Autocuidado">
+
+                    Autocuidado
+
+                </button>
+
+            </div>
+
+            <div class="pesquisa">
+
+                <input
+                    type="text"
+                    id="campoPesquisa"
+                    placeholder="Pesquisar conteúdo...">
+
+            </div>
+
+        </section>
+
+        <!-- CONTADOR DE CONTEÚDOS -->
+
+        <div class="contador">
+
+            <p id="contadorConteudos">
+
+            </p>
+
+        </div>
+
+        <!-- LISTA DE CONTEÚDOS -->
+
+        <section>
+
+            <div
+                id="listaConteudos"
+                class="cards-grid">
+
+            </div>
+
+            <div
+                id="semResultados"
+                class="sem-resultados">
+
+                Nenhum conteúdo encontrado.
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- SCRIPTS -->
+
+    <script src="js/quiz.js"></script>
+
+    <script src="js/biblioteca.js"></script>
+
+</body>
+
+</html>
